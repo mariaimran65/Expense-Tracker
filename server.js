@@ -34,13 +34,12 @@ app.get("/get", (req, res) => {
 
 app.delete("/delete/:id", (req, res) => {
   const { id } = req.params;
-
   trackerModel
     .findByIdAndDelete({ _id: id })
     .then((result) => res.json(result))
     .catch((err) => console.log(err));
 });
 
-app.listen("3003", () => {
+app.listen(3003, () => {
   console.log("server is running");
 });
