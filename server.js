@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 mongoose
   .connect(
-    "mongodb+srv://mariaimran787898:Maria123@cluster0.3ztda6b.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://mariaimran787898:<password>@cluster0.3ztda6b.mongodb.net/?retryWrites=true&w=majority"
   )
   .then(() => {
     console.log("connected to database");
